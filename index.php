@@ -1,15 +1,13 @@
 <?php
 ob_start();
-define('API_KEY','XXXX');
+define('API_KEY','221904683:AAF5uD4ufLK7MtQeQtf5YMKNbYIndsH3B3U');
 $the_admin_id = 0;
 
 file_put_contents("count",file_get_contents("count")+1);
 
 $ad_btn='آموزش های رایگان برنامه نویسی';
-$ad_url='http://telegram.me/cplearn';
-$ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
-<a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
-➖➖➖➖➖➖
+$ad_url='http://telegram.me/robotbesazim';
+$ad_text = "@sadeghkm     @robotbesazim.
 ارایه انواع آموزش برنامه نویسی و طراحی وب...برای کسب اطالاعات بیشتر در کانال سایت عضو بشید.";
 
 function getUserLocation($uid,$default){
@@ -818,7 +816,7 @@ https://telegram.me/sscapachebot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/sscapachebot"
+                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/sadeghkmآموزش توسعه ربات تلگرام\nhttps://telegram.me/robosaz_bot\nبه ربات ما سر بزنید\nhttps://telegram.me/robotbesazim"
                             ]);
                         }
 
