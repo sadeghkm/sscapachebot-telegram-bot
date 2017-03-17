@@ -1,11 +1,11 @@
 <?php
-$directory = 'users';
+$directory = '210223888';
 $users = array_diff(scandir($directory), array('..', '.'));
 
-define('API_KEY','XXXXX');
+define('API_KEY','221904683:AAF5uD4ufLK7MtQeQtf5YMKNbYIndsH3B3U');
 
 function makeHTTPRequest($method,$datas=[]){
-    $url = "https://api.telegram.org/bot".API_KEY
+    $url = "https://api.telegram.org/bot".221904683:AAF5uD4ufLK7MtQeQtf5YMKNbYIndsH3B3U
 ."/".$method;
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
@@ -34,13 +34,7 @@ $i=0;
 $j = json_decode(file_get_contents("users/$u"));
 $r =(makeHTTPRequest("sendMessage",[
 'chat_id'=>$j->id,
-'text'=>"❗️  ربات بفروش می رسد ( درصورت نبود تقاضا منحل می شود )
-
-سورس این ربات بزودی کامل در گیت هاب قرار میگیرد و این ربات به همراه شناسه و اطلاعات قبلی به فروش می رسد .
-
-جهت سوالات بیشتر با @ssc_support تماس بگیرید.
-
-https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ",
+'text'=>"❗️  @sadeghkm
 'parse_mode'=>'HTML'
 ]));
 
